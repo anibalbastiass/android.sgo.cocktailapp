@@ -1,0 +1,17 @@
+include ':app',
+
+        ':core:remote',
+        ':core:presentation',
+        ':core:domain',
+        ':core:testing',
+
+        ':features:meal',
+        ':features:cocktail'
+
+project(':core:remote').projectDir = new File('core/remote')
+project(':core:domain').projectDir = new File('core/domain')
+project(':core:presentation').projectDir = new File('core/presentation')
+project(':core:testing').projectDir = new File('core/testing')
+
+project(':features:meal').projectDir = new File('features/meal')
+project(':features:cocktail').projectDir = new File('features/cocktail')
